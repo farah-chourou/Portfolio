@@ -1,61 +1,99 @@
 import React, { useEffect, useState } from "react";
-import { Container, Row, Col, Image } from "react-bootstrap";
-import { IoLogoGithub } from "react-icons/io";
+
+import {
+  Container,
+  Row,
+  Col,
+  Image,
+  OverlayTrigger,
+  Modal,
+  Button,
+} from "react-bootstrap";
+import {
+  IoLogoGithub,
+  IoIosArrowBack,
+  IoIosArrowForward,
+} from "react-icons/io";
 import data from "./data/projectsData.json";
 
 function Project() {
-  const data = [
-    {
-      id: 1,
-      name: " 2D/3D Game Collect US",
-      description:
-        " 2D/3D advertising game for Kinder's products. The player is foundlost in a maze and should escape it. to solve the maze you need to collect special eggs located at the end of levels one and two.",
-      url: "img/work/collectUS/blue.png",
-      technologie: ["Unity", "C#"],
-    },
-    {
-      id: 2,
-      name: " 2D Game",
-      description: "jjjjj",
-      technologie: ["farah"],
-    },
-  ];
-
   return (
     <>
       {data.map((item) => (
-        <Col
-          md={3}
-          className="border shadow-lg m-3 rounded"
-          style={{
-            height: 420,
-            borderRaduis: "80%",
-            overflow: "hidden",
-          }}
-        >
-          {console.log(data)}
-          <div class="d-flex flex-column bd-highlight mb-3">
-            <div class="p-2 bd-highlight mt-2">
-              <h5> {item.name} </h5>
-            </div>
-            <div class=" bd-highlight ">
-              <Image src={item.url} height={180} />
-            </div>
-            <div class="p-2 bd-highlight"> {item.description}</div>
-            <div class="p-2 bd-highlight">
-              <div class="d-flex justify-content-start">
-                {item.technologie.map((a) => (
-                  <div className="tech"> {a}</div>
-                ))}
-                <div class="ms-auto bd-highlight ">
-                  {" "}
-                  <IoLogoGithub size={25} />
-                </div>
+        <ProjectItem key={item.id} item={item} />
+      ))}
+    </>
+  );
+}
+
+function ProjectItem({ item }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const [modalImageUrl, setModalImageUrl] = useState("");
+
+  const handleImageClick = (imageUrl) => {
+    setModalImageUrl(imageUrl);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+  const handlePrevImage = () => {
+    setCurrentIndex((currentIndex - 1 + data.length) % data.length);
+  };
+
+  const handleNextImage = () => {
+    setCurrentIndex((currentIndex + 1) % data.length);
+  };
+
+  return (
+    <>
+      <Col
+        md={3}
+        className="border  m-1 mt-4  project"
+        style={{
+          height: 440,
+          borderRaduis: "80%",
+          overflow: "hidden",
+        }}
+      >
+        {console.log(data)}
+        <div class="d-flex flex-column bd-highlight mb-3 align-item">
+          <div class="p-2 bd-highlight mt-2">
+            <h6> {item.name} </h6>
+          </div>
+          <div class=" bd-highlight text-center  ">
+            <Image
+              src={item.url[currentIndex]}
+              height={150}
+              width={280}
+              onClick={() => handleImageClick(item.url[currentIndex])}
+              style={{ cursor: "pointer", borderRadius: 10 }}
+            />
+          </div>
+          <div class="p-2" style={{ height: "150px" }}>
+            {" "}
+            {item.description}
+          </div>
+          <div class="p-2 bd-highlight mt-auto">
+            <div class="d-flex justify-content-start">
+              {item.technologie.map((a) => (
+                <div className="tech"> {a}</div>
+              ))}
+              <div class="ms-auto bd-highlight ">
+                {" "}
+                <IoLogoGithub size={25} />
               </div>
             </div>
           </div>
-        </Col>
-      ))}
+        </div>
+      </Col>
+      <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal.Body style={{ padding: 0 }}>
+          <Image src={modalImageUrl} fluid />
+        </Modal.Body>
+      </Modal>{" "}
     </>
   );
 }

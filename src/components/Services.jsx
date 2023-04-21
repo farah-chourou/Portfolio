@@ -54,8 +54,11 @@ export default function Services() {
             <div className="service-desc">
               <h3>Custom software</h3>
               <p>
-                I build good looking and professional mobile applications for
-                both Android and iOS.
+                I offer to clients who have unique business needs that cannot be
+                addressed by off-the-shelf software solutions. With custom
+                software development, I work closely with clients to understand
+                their requirements and develop software that is tailored
+                specifically to their needs.
               </p>
             </div>
           </Col>

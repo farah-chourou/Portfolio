@@ -4,7 +4,9 @@
   height: 300px;
   padding: 0;
   /* background: url(../img/intro-bg.jpg) center center no-repeat;*/
+  background: linear-gradient(to right, #030122 0%, #529ae7 100%);
 
+  background-color: #e5e5e5;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -17,7 +19,7 @@
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 49px;
+  font-size: 55px;
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 0;
@@ -91,6 +93,7 @@
 #about h2::after {
   position: absolute;
   content: "";
+  background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   height: 4px;
   width: 60px;
   bottom: 0;
@@ -111,6 +114,7 @@
 #about img {
   width: 520px;
   margin-top: 10px;
+  background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
 }
@@ -133,6 +137,7 @@
 
 #services {
   padding: 100px 0;
+  background: linear-gradient(to right, #030122 0%, #285483 100%);
 }
 #services .service-desc {
   margin: 10px 10px 20px;
@@ -174,6 +179,7 @@
 
 /*skills*/
 #skills {
+  background: #e6e6e6;
   padding-top: 80px;
   padding-bottom: 50px;
 }
@@ -247,19 +253,14 @@
 }
 
 #work {
+  background: #e6e6e6;
   padding-top: 80px;
   padding-bottom: 50px;
 }
-.service {
-  background-color: transparent;
-  padding: 10px;
-  border-radius: 5%;
-  transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
 .service:hover {
   background-color: rgba(255, 255, 255, 0.048);
-  transform: scale(1.05);
+  padding: 10px;
+  border-radius: 5%;
 }
 .work-img {
   -webkit-filter: drop-shadow(5px 5px 5px #222);
@@ -286,40 +287,23 @@
 .project {
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
-    rgba(83, 83, 83, 0.637) 0px 2px 4px 0px,
-    rgba(143, 143, 143, 0.623) 0px 0px 0px 1px inset;
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   transition: 0.5s all ease-in-out;
 }
 
 .project:hover {
   border: 1px solid rgb(185, 185, 185);
-  background-color: #0a064770;
+  background-color: #ffffff;
   transform: scale(1.02);
-}
-.image-container {
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-}
-
-.image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.8s ease-in-out;
-}
-
-.image:hover {
-  transform: scale(1.1);
 }
 
 /** Footer **/
 #footer {
-  padding: 15px;
+  padding: 5px;
   text-align: center;
+  background: linear-gradient(to right, #030122 0%, #2b5279 100%);
+  color: white;
 }
 .heart {
   color: rgb(172, 11, 11);
