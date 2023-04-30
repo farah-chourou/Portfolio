@@ -17,11 +17,35 @@ import {
 import data from "./data/projectsData.json";
 
 function Project() {
+  const [pageSize, setPageSize] = useState(3);
+  const [page, setPage] = useState(1);
+
+  const startIndex = (page - 1) * pageSize;
+  const endIndex = page * pageSize;
+
+  const visibleData = data.slice(startIndex, endIndex);
+
+  const handleShowMore = () => {
+    setPageSize(pageSize + 3);
+  };
   return (
     <>
-      {data.map((item) => (
+      {visibleData.map((item) => (
         <ProjectItem key={item.id} item={item} />
       ))}
+      {pageSize < data.length && (
+        <div className="text-center mt-4" style={{ fontSize: 15 }}>
+          <div
+            onClick={handleShowMore}
+            style={{
+              textTransform: "uppercase",
+              cursor: "pointer",
+            }}
+          >
+            Show more
+          </div>
+        </div>
+      )}
     </>
   );
 }
@@ -58,7 +82,6 @@ function ProjectItem({ item }) {
           overflow: "hidden",
         }}
       >
-        {console.log(data)}
         <div class="d-flex flex-column bd-highlight mb-3 align-item">
           <div class="p-2 bd-highlight mt-2">
             <h6> {item.name} </h6>
@@ -81,10 +104,18 @@ function ProjectItem({ item }) {
               {item.technologie.map((a) => (
                 <div className="tech"> {a}</div>
               ))}
-              <div class="ms-auto bd-highlight ">
-                {" "}
-                <IoLogoGithub size={25} />
-              </div>
+              {item.github ? (
+                <div
+                  class="ms-auto bd-highlight "
+                  style={{ cursor: "pointer" }}
+                  onClick={() => window.open(item.github_url)}
+                >
+                  {" "}
+                  <IoLogoGithub size={25} href={item.github_url} />
+                </div>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </div>

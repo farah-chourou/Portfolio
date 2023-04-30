@@ -21,8 +21,16 @@ export default function About() {
   */}
       <Container>
         <Row>
-          <Col md={6} xs={12}>
-            <Image src="img/avatar1.png" alt="" />{" "}
+          <Col
+            md={6}
+            xs={12}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Image src="img/me4.png" alt="" style={{ width: "350px" }} />
           </Col>
 
           <Col md={6} xs={12}>
@@ -74,18 +82,17 @@ export default function About() {
                   </ul>
                 </Col>
               </Row>
-              <Row>
+              <Row style={{ display: "flex", alignItems: "center" }}>
                 <h3 style={{ textAlign: "center", marginTop: 10 }}>
-                  <IconButton size="large">
-                    <a href="./img/CV.pdf">
-                      {" "}
-                      <HiOutlineDownload size="26px" color="gray" />
+                  <IconButton
+                    size="small"
+                    style={{ position: "relative", bottom: 3 }}
+                  >
+                    <a href="./CV.pdf" download>
+                      <HiOutlineDownload size="25px" color="white" />
                     </a>
                   </IconButton>
-                  <IconButton size="large">
-                    <TiEye size="26px" color="gray" />
-                  </IconButton>
-                  curriculum vitae
+                  Curriculum Vitae
                 </h3>
               </Row>
             </div>

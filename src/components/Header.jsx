@@ -46,7 +46,7 @@ export default function Header() {
                 {/*<MdComputer  color='white' size='80px' style={{position:"relative", bottom:"-15px"}} /> */}
               </h1>
               <p>Software engineering, addicted success and learning</p>
-              <a href="#features" className="btn btn-custom btn-lg page-scroll">
+              <a href="#about" className="btn btn-custom btn-lg page-scroll">
                 About Me
               </a>{" "}
             </div>

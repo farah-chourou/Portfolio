@@ -1,7 +1,67 @@
 [
   {
+    "id": 10,
+    "name": "Project And Task Management Platform",
+    "description": "Whether you're working on a team project or managing multiple tasks on your own, my app helps you stay organized and on track. You can assign tasks to team members, set deadlines, and track progress in real-time.",
+    "technologie": ["React JS", "Express JS", "Mongo DB"],
+    "url": [
+      "img/work/GestionDesProject/1.png",
+      "img/work/GestionDesProject/2.png"
+    ],
+    "github": true,
+    "github_url": "https://github.com/farah-chourou/FrontEnd_Maintenance_Logiciel-"
+  },
+
+  {
+    "id": 8,
+    "name": " Tunisian Campers ",
+    "description": "This is a camping web platform whose main goal is to organize camping trips and bring camping enthusiasts together.With this application, you can filter upcoming camping events by distance, rating, type, and more.",
+    "technologie": ["React JS", "Spring Boot", "My SQL"],
+    "url": [
+      "img/work/TunisanCampers/1.png",
+      "img/work/TunisanCampers/2.png",
+      "img/work/TunisanCampers/3.png",
+      "img/work/TunisanCampers/4.png"
+    ],
+    "github": false,
+    "github_url": ""
+  },
+  {
+    "id": 5,
+    "name": "Mutual By Codway",
+    "description": "A web application for managing health bulletins through workflow notification to facilitate the healthcare information management process between three stakeholders:healthcare providers, insurance companies, and patients.",
+    "technologie": ["Spring Boot", "React JS", "My SQL"],
+    "url": [
+      "img/work/pfe/1.png",
+      "img/work/pfe/2.png",
+      "img/work/pfe/3.png",
+      "img/work/pfe/4.png"
+    ],
+    "github": true,
+    "github_url": "https://github.com/farah-chourou/PFE"
+  },
+  {
+    "id": 9,
+    "name": "Audiovisual_Agency",
+    "description": "Tawfik Production is  an online platform for showcasing the agency's portfolio of audiovisual work. ",
+    "technologie": ["React JS"],
+    "url": ["img/work/audioVis/1.png", "img/work/audioVis/2.png"],
+    "github": false,
+    "github_url": ""
+  },
+  {
+    "id": 7,
+    "name": "Web2App",
+    "description": "Mobile  app allow users to convert websites to mobile versions optimized for display on mobile devices. It provides a smoother and faster user experience for users browsing websites on their phones.",
+    "technologie": ["Dart", "Flutter"],
+    "url": ["img/work/web2app/1.png"],
+    "github": true,
+    "github_url": "https://github.com/farah-chourou/Web2App"
+  },
+
+  {
     "id": 1,
-    "name": " 2D/3D Game Collect US",
+    "name": "Collect US",
     "description": " 2D/3D advertising game for Kinder's products. The player is foundlost in a maze and should escape it. to solve the maze you need to collect special eggs located at the end of levels one and two.",
     "url": [
       "img/work/collectUS/1.png",
@@ -9,11 +69,13 @@
       "img/work/collectUS/3.png",
       "img/work/collectUS/4.png"
     ],
-    "technologie": ["Unity", "C#"]
+    "technologie": ["Unity", "C#"],
+    "github": true,
+    "github_url": "https://github.com/farah-chourou/Kinder-Game"
   },
   {
     "id": 2,
-    "name": " 2D Game Date Night",
+    "name": "Date Night",
     "description": "2D game inspired by the Titanic movie, Jack and rose need to collaborate together in order to reach a date appointment. thus, they should clear the way for each other.",
     "technologie": ["Unity", "C#"],
     "url": [
@@ -21,58 +83,36 @@
       "img/work/dateNight/1.png",
       "img/work/dateNight/3.png",
       "img/work/dateNight/4.png"
-    ]
+    ],
+    "github": false,
+    "github_url": ""
   },
   {
     "id": 3,
-    "name": " Augmented Reality CV",
-    "description": "  Curriculum vitae and digital portfolio introduced in augmented reality, allowing me to increase the impact of my applications to recruiters.",
-    "technologie": ["Unity", "C#", "AR kit", "Maya"],
-    "url": ["img/work/AR/1.png", "img/work/AR/2.png"]
+    "name": "The Lady in Endless Run",
+    "description": "3D game inspired by the  Subway Surfers  game, where the player controls a character running along a track, avoiding obstacles and collecting coins.",
+    "technologie": ["Unity", "C#"],
+    "url": ["img/work/mar3ouchaGame/1.png", "img/work/mar3ouchaGame/2.png"],
+    "github": false,
+    "github_url": ""
   },
   {
     "id": 4,
-    "name": " Web application",
-    "description": "A web application for managing health bulletins through workflow notification to facilitate the healthcare information management process between three stakeholders.",
-    "technologie": ["Spring Boot", "React JS", "My SQL"],
-    "url": [
-      "img/work/pfe/1.png",
-      "img/work/pfe/2.png",
-      "img/work/pfe/3.png",
-      "img/work/pfe/4.png"
-    ]
+    "name": " Augmented Reality CV",
+    "description": "  Curriculum vitae and digital portfolio introduced in augmented reality, allowing me to increase the impact of my applications to recruiters.",
+    "technologie": ["Unity", "C#", "AR kit", "Maya"],
+    "url": ["img/work/AR/1.png", "img/work/AR/2.png"],
+    "github": false,
+    "github_url": ""
   },
-  {
-    "id": 5,
-    "name": " Mobile application",
-    "description": "A web application for managing health bulletins through workflow notification to facilitate the healthcare information management process between three stakeholders.",
-    "technologie": ["Spring Boot", "React JS", "My SQL"],
-    "url": ["img/work/collectUS/blue.png", "img/work/collectUS/kgame1.png"]
-  },
+
   {
     "id": 6,
-    "name": " Mobile application",
-    "description": "Mobile web conversion app allow users to convert websites to mobile versions optimized for display on mobile devices. It provides a smoother and faster user experience for users browsing websites on their phones.",
-    "technologie": ["Dart", "Flutter"],
-    "url": ["img/work/collectUS/blue.png", "img/work/collectUS/kgame1.png"]
-  },
-  {
-    "id": 7,
-    "name": " Tunisian Campers",
-    "description": "This is a camping web platform whose main goal is to organize camping trips and bring camping enthusiasts together.With this application, you can filter upcoming camping events by distance, rating, type, and more.",
-    "technologie": ["React JS", "Spring Boot"],
-    "url": [
-      "img/work/TunisanCampers/1.png",
-      "img/work/TunisanCampers/2.png",
-      "img/work/TunisanCampers/3.png",
-      "img/work/TunisanCampers/4.png"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "Audiovisual_Agency",
-    "description": "Tawfik Production is  an online platform for showcasing the agency's portfolio of audiovisual work. ",
-    "technologie": ["React JS"],
-    "url": ["img/work/audioVis/1.png", "img/work/audioVis/2.png"]
+    "name": " 3D Modeling",
+    "description": "3D scene of a robot chef street cooking festival with animations with the help of Maya software.",
+    "technologie": ["Maya"],
+    "url": ["img/work/3D/1.png", "img/work/3D/2.png"],
+    "github": false,
+    "github_url": ""
   }
 ]
