@@ -86,7 +86,7 @@ export default function About() {
                 <h3 style={{ textAlign: "center", marginTop: 10 }}>
                   <IconButton
                     size="small"
-                    style={{ position: "relative", bottom: 3 }}
+                    style={{ position: "relative", bottom: 2 }}
                   >
                     <a href="./CV.pdf" download>
                       <HiOutlineDownload size="25px" color="white" />
