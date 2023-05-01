@@ -31,7 +31,7 @@ function Navigation() {
           {" "}
           <div>
             {" "}
-            <img src="img/logo.png" width="18%"></img>{" "}
+            <img src="img/logo.png" width="13%"></img>{" "}
           </div>{" "}
         </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

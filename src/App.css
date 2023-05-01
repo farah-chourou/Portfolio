@@ -231,8 +231,8 @@
 
 /*avatar Contact*/
 .plugin-contact {
-  width: 59px;
-  height: 59px;
+  width: 55px;
+  height: 55px;
   margin: 10px;
 
   margin-left: auto;
@@ -243,7 +243,7 @@
   border: 0.2px solid rgb(100, 100, 100);
 }
 .icon-contact {
-  margin-left: -10px;
+  margin-left: -7px;
 }
 
 #work {

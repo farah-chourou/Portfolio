@@ -90,14 +90,14 @@ function ProjectItem({ item }) {
             <Image
               src={item.url[currentIndex]}
               height={150}
-              width={280}
+              width={260}
               onClick={() => handleImageClick(item.url[currentIndex])}
               style={{ cursor: "pointer", borderRadius: 10 }}
             />
           </div>
-          <div class="p-2" style={{ height: "150px" }}>
+          <div class="p-2" style={{ height: "175px" }}>
             {" "}
-            {item.description}
+            <p style={{ fontSize: 15 }}>{item.description} </p>
           </div>
           <div class="p-2 bd-highlight mt-auto">
             <div class="d-flex justify-content-start">
@@ -111,7 +111,7 @@ function ProjectItem({ item }) {
                   onClick={() => window.open(item.github_url)}
                 >
                   {" "}
-                  <IoLogoGithub size={25} href={item.github_url} />
+                  <IoLogoGithub size={23} href={item.github_url} />
                 </div>
               ) : (
                 <></>
