@@ -89,7 +89,7 @@ export default function About() {
                     style={{ position: "relative", bottom: 2 }}
                   >
                     <a href="./CV.pdf" download>
-                      <HiOutlineDownload size="25px" color="white" />
+                      <HiOutlineDownload size="26px" color="white" />
                     </a>
                   </IconButton>
                   Curriculum Vitae
