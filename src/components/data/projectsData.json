@@ -11,6 +11,15 @@
     "github": true,
     "github_url": "https://github.com/farah-chourou/FrontEnd_Maintenance_Logiciel-"
   },
+  {
+    "id": 11,
+    "name": "Art Collection Platform",
+    "description": "Art Collection Platform developed during an end-of-year project  for the Hasdrubal Hostel Art Foundation",
+    "technologie": ["React JS", "Redux", "Node JS"],
+    "url": ["img/work/ArtCollection/1.png", "img/work/ArtCollection/2.png"],
+    "github": false,
+    "github_url": "https://github.com/farah-chourou/FrontEnd_Maintenance_Logiciel-"
+  },
 
   {
     "id": 8,
